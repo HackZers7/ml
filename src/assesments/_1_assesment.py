@@ -42,10 +42,9 @@ def run():
 
     # Задача 4
     # Вычисляем корреляцию с помощью алгоритма Пирсона
-    c_math_score_reading_score = get_pearson_correlation(train_dataset['math score'], train_dataset['reading score'])
-    c_math_score_writing_score = get_pearson_correlation(train_dataset['math score'], train_dataset['writing score'])
-    c_reading_score_writing_score = get_pearson_correlation(train_dataset['reading score'],
-                                                            train_dataset['writing score'])
+    c_math_score_reading_score = get_pearson_correlation(math_score, reading_score)
+    c_math_score_writing_score = get_pearson_correlation(math_score, writing_score)
+    c_reading_score_writing_score = get_pearson_correlation(reading_score, writing_score)
 
     print("Корреляция между math score и reading score:", c_math_score_reading_score)
     print("Корреляция между math score и writing score:", c_math_score_writing_score)
