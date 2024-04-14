@@ -1,3 +1,3 @@
-import assesments._1_assesment as a1
+import assesments._2_assesment as a2
 
-a1.run()
+a2.run()
